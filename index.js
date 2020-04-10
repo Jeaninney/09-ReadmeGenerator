@@ -1,11 +1,11 @@
 //Homework 09 - Readme Generator
 const fs = require("fs");
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
 
-var URL = "https://api.github.com/search/repositories?q=topic:ruby+topic:rails"
+const URL = "https://api.github.com/search/repositories?q=topic:ruby+topic:rails"
+let readMe = "";
 
-inquirer
-  .prompt([
+inquirer.prompt([
     {
       type: "input",
       message: "What is your user GitHub username?",
@@ -33,11 +33,18 @@ inquirer
     // }
   ])
   .then(function(response) {
+    readMe = `
+    Username: ${response.username}
+    Project Title: ${response.title}
+    Project Description: ${response.description}
+    `
+    fs.writeFile("README.md", readMe, function(err) {
+      
+      if (err) {
+        return console.log(err);
+      }
 
-    if (response.confirm === response.password) {
       console.log("Success!");
-    }
-    else {
-      console.log("You forgot your password already?!");
-    }
+      
+    })
   });
