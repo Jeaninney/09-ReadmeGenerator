@@ -21,18 +21,9 @@ inquirer.prompt([
         message: "Provide a description of your project:",
         name: "description"
     },  
-    // {
-    //   type: "input",
-    //   message: "What is your password?",
-    //   name: "password"
-    // },
-    // {
-    //   type: "password",
-    //   message: "Re-enter password to confirm:",
-    //   name: "confirm"
-    // }
+
   ])
-  .then(function(response) {
+  .then(response => {
     readMe = `
     Username: ${response.username}
     Project Title: ${response.title}
@@ -40,11 +31,7 @@ inquirer.prompt([
     `
     fs.writeFile("README.md", readMe, function(err) {
       
-      if (err) {
-        return console.log(err);
-      }
+      if (err ? console.log(err) : console.log("Success!"));
 
-      console.log("Success!");
-      
     })
   });
