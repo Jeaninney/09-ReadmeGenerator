@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Jeaninney/09-ReadmeGenerator#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "inquirer": "^7.1.0"
   }
 }
