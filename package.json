@@ -1,29 +1,16 @@
 {
-  "name": "09-readmegenerator",
+  "name": "static-site",
   "version": "1.0.0",
-  "description": "Generates a Readme file",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jeaninney/09-ReadmeGenerator.git"
-  },
-  "keywords": [
-    "readme",
-    "generator",
-    "homework",
-    "nodejs"
-  ],
-  "author": "Jeaninne MacDonnell",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jeaninney/09-ReadmeGenerator/issues"
-  },
-  "homepage": "https://github.com/Jeaninney/09-ReadmeGenerator#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "inquirer": "^7.1.0"
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "inquirer": "^6.3.1"
   }
 }
