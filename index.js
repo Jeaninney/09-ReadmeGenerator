@@ -90,17 +90,17 @@ ${response.description}
          
 ## Table of Contents
        
-* [Installation] (#installation)
+* [Installation](#installation)
             
-* [Usage] (#usage)
+* [Usage](#usage)
             
-* [License] (#license)
+* [License](#license)
             
-* [Contributing] (#contributing)
+* [Contributing](#contributing)
             
-* [Tests] (#tests)
+* [Tests](#tests)
             
-* [Questions] (#questions)
+* [Questions](#questions)
          
 ## Installation
             
@@ -134,7 +134,7 @@ ${response.tests}
             
 <img src="https://github.com/${response.username}.png" alt="avatar" style="border-radius: 16px" width="30" />
             
-If you have any questions about the repo, open an issue or contact [${response.username}] (https://api.github.com/users/${response.username}) directly at ${response.email}
+If you have any questions about the repo, open an issue or contact [${response.username}](https://api.github.com/users/${response.username}) directly at ${response.email}
             
 `;
 }

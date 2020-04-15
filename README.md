@@ -1,24 +1,24 @@
 
 
-# nothing  
-BSD3 
+# generator  
+GPL 3.0 
             
 ## Description: 
-no
+generates
          
 ## Table of Contents
        
-* [Installation] (#installation)
+* [Installation](#installation)
             
-* [Usage] (#usage)
+* [Usage](#usage)
             
-* [License] (#license)
+* [License](#license)
             
-* [Contributing] (#contributing)
+* [Contributing](#contributing)
             
-* [Tests] (#tests)
+* [Tests](#tests)
             
-* [Questions] (#questions)
+* [Questions](#questions)
          
 ## Installation
             
@@ -30,7 +30,7 @@ npm i
         
 ## Usage
             
-nothing
+usage
             
 ## License 
             
@@ -38,7 +38,7 @@ badges  shields.io
             
 ## Contributing
             
-stop
+contr
             
 ## Tests
             
@@ -52,5 +52,5 @@ npm test
             
 <img src="https://github.com/jeaninney.png" alt="avatar" style="border-radius: 16px" width="30" />
             
-If you have any questions about the repo, open an issue or contact [jeaninney] (https://api.github.com/users/jeaninney) directly at undefined
+If you have any questions about the repo, open an issue or contact [jeaninney](https://api.github.com/users/jeaninney) directly at undefined
             
