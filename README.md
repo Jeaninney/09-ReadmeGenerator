@@ -1,10 +1,11 @@
 
 
-# 1  
+# Readme  
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+[![LanguageCount](https://img.shields.io/github/languages/count/Jeaninney/09-ReadmeGenerator)](https://github.com/Jeaninney/09-ReadmeGenerator)
             
 ## Description: 
-2
+no desc
          
 ## Table of Contents
        
@@ -25,32 +26,32 @@
 To install necessary dependencies, run the following command:
             
 ```
-4
+npm i
 ```
         
 ## Usage
             
-6
+No use
             
 ## License 
             
-badges  shields.io
+This project is licensed under the GPL 3.0 license.
             
 ## Contributing
             
-7
+needs help
             
 ## Tests
             
 To run tests, run the following command:
             
 ```
-5
+npm test
 ```
             
 ## Questions
             
-<img src="https://github.com/jeaninney.png" alt="avatar" style="border-radius: 16px" width="30" />
+<img src="https://github.com/Jeaninney.png" alt="avatar" style="border-radius: 16px" width="30" />
             
-If you have any questions about the repo, open an issue or contact [jeaninney](https://api.github.com/users/jeaninney) directly at undefined
+If you have any questions about the repo, open an issue or contact [Jeaninney](https://api.github.com/users/Jeaninney) directly at jeaninnel@hotmail.com
             

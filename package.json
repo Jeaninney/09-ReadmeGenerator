@@ -19,7 +19,6 @@
   "author": "Jeaninne MacDonnell",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0",
     "dotenv": "^8.0.0",
     "inquirer": "^6.3.1",
     "util": "^0.12.2"
