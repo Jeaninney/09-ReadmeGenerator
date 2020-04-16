@@ -1,10 +1,10 @@
 
 
-# generator  
-GPL 3.0 
+# 1  
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
             
 ## Description: 
-generates
+2
          
 ## Table of Contents
        
@@ -25,12 +25,12 @@ generates
 To install necessary dependencies, run the following command:
             
 ```
-npm i
+4
 ```
         
 ## Usage
             
-usage
+6
             
 ## License 
             
@@ -38,14 +38,14 @@ badges  shields.io
             
 ## Contributing
             
-contr
+7
             
 ## Tests
             
 To run tests, run the following command:
             
 ```
-npm test
+5
 ```
             
 ## Questions
