@@ -153,7 +153,7 @@ ${response.tests}
             
 <img src="https://github.com/${response.username}.png" alt="avatar" style="border-radius: 16px" width="30" />
             
-If you have any questions about the repo, open an issue or contact [${response.username}](https://api.github.com/users/${response.username}) directly at ${response.email}
+If you have any questions about the repo, open an issue or contact [${response.username}](https://github.com/${response.username}) directly at ${response.email}
             
 `;
 }
@@ -162,7 +162,7 @@ If you have any questions about the repo, open an issue or contact [${response.u
 function init () {
     promptUser()
         .then((response) => {
-            return writeFileAsync("README.md", generateMarkdown(response));
+            return writeFileAsync("./generated/README.md", generateMarkdown(response));
         }).then(() => {
             console.log("README generation was successful.");
         }).catch(error => console.log(error));
