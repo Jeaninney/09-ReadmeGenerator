@@ -1,26 +1,14 @@
+//adds in the necessary utilities
+const fs = require("fs");
+const inquirer = require("inquirer");
+const util = require("util");
+
+const writeFileAsync = util.promisify(fs.writeFile);
+
+//these are the choices I provide for licenses in the prompts
 const licenseChoices = ["MIT", "APACHE 2.0", "GPL 3.0", "BSD3", "None"];
 
-function determineBadge (licenseChoices) {
-    let badge = "";
-    switch (licenseChoices) {
-        case "MIT":
-            badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-            break;
-        case "APACHE 2.0":
-            badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)]";
-            break;
-        case "GPL 3.0":
-            badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-            break;
-        case "BSD3":
-            badge = "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
-            break;
-        default:
-            badge = "";
-    }
-    return badge;
-}
-
+//these are the questions I ask in the prompts
 const questions = [
     {
         type: "input",
@@ -76,20 +64,36 @@ const questions = [
         message: "What is your email address?",
         name: "email"
     }
-]
+];
 
-const fs = require("fs");
-const inquirer = require("inquirer");
-const util = require("util");
-
-const writeFileAsync = util.promisify(fs.writeFile);
-
-function promptUser() {
-    
-    return inquirer.prompt(questions);
+//this function assigns the badge based on the license that was selected
+function determineBadge (licenseChoices) {
+    let badge = "";
+    switch (licenseChoices) {
+        case "MIT":
+            badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+            break;
+        case "APACHE 2.0":
+            badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)]";
+            break;
+        case "GPL 3.0":
+            badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+            break;
+        case "BSD3":
+            badge = "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+            break;
+        default:
+            badge = "";
     }
+    return badge;
+}
 
+//this function passes my list of questions into the inquirer prompts
+function promptUser() {
+    return inquirer.prompt(questions);
+}
 
+//this function generates the markdown that gets written to the README
 function generateMarkdown(response) {
     const badge = determineBadge(response.license);
     const badge2 = `[![LanguageCount](https://img.shields.io/github/languages/count/${response.username}/${response.reponame})](https://github.com/${response.username}/${response.reponame})`;
@@ -154,6 +158,7 @@ If you have any questions about the repo, open an issue or contact [${response.u
 `;
 }
 
+//this is the function that kicks everything off
 function init () {
     promptUser()
         .then((response) => {

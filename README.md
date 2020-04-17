@@ -1,11 +1,11 @@
 
 
-# Readme  
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+# Readme Generator  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![LanguageCount](https://img.shields.io/github/languages/count/Jeaninney/09-ReadmeGenerator)](https://github.com/Jeaninney/09-ReadmeGenerator)
             
 ## Description: 
-no desc
+This generates a functional README by answering a few questions.
          
 ## Table of Contents
        
@@ -31,15 +31,15 @@ npm i
         
 ## Usage
             
-No use
+The gitignore ignores the node modules.
             
 ## License 
             
-This project is licensed under the GPL 3.0 license.
+This project is licensed under the MIT license.
             
 ## Contributing
             
-needs help
+There's nothing to know about contributing to this repo
             
 ## Tests
             
